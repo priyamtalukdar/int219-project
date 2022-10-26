@@ -5,243 +5,147 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Nike Store</title>
+    <title>IRON FITNESS</title>
+    <script src="./script/script.js" defer></script>
+    <link href="./style/style.css" rel="stylesheet">
+    <link href="./style/mediaqueries.css" rel="stylesheet">
+    <link href="./images/thunderbolt-outline.png" rel="icon">
+    <link href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav id="nav">
-        <div class="navTop">
-            <div class="navItem">
-                <img src="./img/sneakers.png" alt="">
-            </div>
-            <div class="navItem">
-                <div class="search">
-                    <input type="text" placeholder="Search..." class="searchInput">
-                    <img src="./img/search.png" width="20" height="20" alt="" class="searchIcon">
-                </div>
-            </div>
-            <div class="navItem">
-                <span class="limitedOffer">Limited Offer!</span>
-            </div>
-        </div>
-        <div class="navBottom">
-            <h3 class="menuItem">AIR FORCE</h3>
-            <h3 class="menuItem">JORDAN</h3>
-            <h3 class="menuItem">BLAZER</h3>
-            <h3 class="menuItem">CRATER</h3>
-            <h3 class="menuItem">HIPPIE</h3>
-        </div>
-    </nav>
-    <div class="slider">
-        <div class="sliderWrapper">
-            <div class="sliderItem">
-                <img src="./img/air.png" alt="" class="sliderImg">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">AIR FORCE</br> NEW</br> SEASON</h1>
-                <h2 class="sliderPrice">$119</h2>
-                <a href="#product">
-                    <button class="buyButton">BUY NOW!</button>
+    <div class="container">
+       <!-- logo  -->
+        <header>
+            <div class="headerLogo">
+                <a href="#">
+                    <div><span>I</span>RON FITNESS </div>
+                    <img src="./images/thunderbolt-white.png" height="20px">
                 </a>
             </div>
-            <div class="sliderItem">
-                <img src="./img/jordan.png" alt="" class="sliderImg">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">AIR JORDAN</br> NEW</br> SEASON</h1>
-                <h2 class="sliderPrice">$149</h2>
-                <a href="#product">
-                    <button class="buyButton">BUY NOW!</button>
-                </a>
-            </div>
-            <div class="sliderItem">
-                <img src="./img/blazer.png" alt="" class="sliderImg">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">BLAZER</br> NEW</br> SEASON</h1>
-                <h2 class="sliderPrice">$109</h2>
-                <a href="#product">
-                    <button class="buyButton">BUY NOW!</button>
-                </a>
-            </div>
-            <div class="sliderItem">
-                <img src="./img/crater.png" alt="" class="sliderImg">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">CRATER</br> NEW</br> SEASON</h1>
-                <h2 class="sliderPrice">$129</h2>
-                <a href="#product">
-                    <button class="buyButton">BUY NOW!</button>
-                </a>
-            </div>
-            <div class="sliderItem">
-                <img src="./img/hippie.png" alt="" class="sliderImg">
-                <div class="sliderBg"></div>
-                <h1 class="sliderTitle">HIPPIE</br> NEW</br> SEASON</h1>
-                <h2 class="sliderPrice">$99</h2>
-                <a href="#product">
-                    <button class="buyButton">BUY NOW!</button>
-                </a>
-            </div>
-        </div>
-    </div>
-   
-    <div class="features">
-        <div class="feature">
-            <img src="./img/shipping.png" alt="" class="featureIcon">
-            <span class="featureTitle">FREE SHIPPING</span>
-            <span class="featureDesc">Free worldwide shipping on all orders.</span>
-        </div>
-        <div class="feature">
-            <img class="featureIcon" src="./img/return.png" alt="">
-            <span class="featureTitle">30 DAYS RETURN</span>
-            <span class="featureDesc">No question return and easy refund in 14 days.</span>
-        </div>
-        <div class="feature">
-            <img class="featureIcon" src="./img/gift.png" alt="">
-            <span class="featureTitle">GIFT CARDS</span>
-            <span class="featureDesc">Buy gift cards and use coupon codes easily.</span>
-        </div>
-        <div class="feature">
-            <img class="featureIcon" src="./img/contact.png" alt="">
-            <span class="featureTitle">CONTACT US!</span>
-            <span class="featureDesc">Keep in touch via email and support system.</span>
-        </div>
-    </div>
+            <div id="showMenu"></div>
+            <nav>
+                <a href="#plansSection"><span>Plans</span></a>
+                <a href="#aboutUsSection"><span>About us</span></a>
+                <a href="#findUsSection"><span>Find us</span></a>
+                <a href="#contact"><span>Contact</span></a>
+              
+            </nav>
+            <button class="hamburgerMenu"><i class="fa-regular fa-bars"></i></button>
+        </header>
 
-    <div class="product" id="product">
-        <img src="./img/air.png" alt="" class="productImg">
-        <div class="productDetails">
-            <h1 class="productTitle">AIR FORCE</h1>
-            <h2 class="productPrice">$199</h2>
-            <p class="productDesc">Lorem ipsum dolor sit amet consectetur impal adipisicing elit. Alias assumenda
-                dolorum
-                doloremque sapiente aliquid aperiam.</p>
-            <div class="colors">
-                <div class="color"></div>
-                <div class="color"></div>
-            </div>
-            <div class="sizes">
-                <div class="size">42</div>
-                <div class="size">43</div>
-                <div class="size">44</div>
-            </div>
-            <button class="productButton">BUY NOW!</button>
-        </div>
-        <div class="payment">
-            <h1 class="payTitle">Personal Information</h1>
-            <label>Name and Surname</label>
-            <input type="text" placeholder="John Doe" class="payInput">
-            <label>Phone Number</label>
-            <input type="text" placeholder="+1 234 5678" class="payInput">
-            <label>Address</label>
-            <input type="text" placeholder="Elton St 21 22-145" class="payInput">
-            <h1 class="payTitle">Card Information</h1>
-            <div class="cardIcons">
-                <img src="./img/visa.png" width="40" alt="" class="cardIcon">
-                <img src="./img/master.png" alt="" width="40" class="cardIcon">
-            </div>
-            <input type="password" class="payInput" placeholder="Card Number">
-            <div class="cardInfo">
-                <input type="text" placeholder="mm" class="payInput sm">
-                <input type="text" placeholder="yyyy" class="payInput sm">
-                <input type="text" placeholder="cvv" class="payInput sm">
-            </div>
-            <button class="payButton">Checkout!</button>
-            <span class="close">X</span>
-        </div>
-    </div>
-    <div class="gallery">
-        <div class="galleryItem">
-            <h1 class="galleryTitle">Be Yourself!</h1>
-            <img src="https://images.pexels.com/photos/9295809/pexels-photo-9295809.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                alt="" class="galleryImg">
-        </div>
-        <div class="galleryItem">
-            <img src="https://images.pexels.com/photos/1040427/pexels-photo-1040427.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                alt="" class="galleryImg">
-            <h1 class="galleryTitle">This is the First Day of Your New Life</h1>
-        </div>
-        <div class="galleryItem">
-            <h1 class="galleryTitle">Just Do it!</h1>
-            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                alt="" class="galleryImg">
-        </div>
-    </div>
-    <div class="newSeason">
-        <div class="nsItem">
-            <img src="https://images.pexels.com/photos/4753986/pexels-photo-4753986.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                alt="" class="nsImg">
-        </div>
-        <div class="nsItem">
-            <h3 class="nsTitleSm">WINTER NEW ARRIVALS</h3>
-            <h1 class="nsTitle">New Season</h1>
-            <h1 class="nsTitle">New Collection</h1>
-            <a href="#nav">
-                <button class="nsButton">CHOOSE YOUR STYLE</button>
-            </a>
-        </div>
-        <div class="nsItem">
-            <img src="https://images.pexels.com/photos/7856965/pexels-photo-7856965.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                alt="" class="nsImg">
-        </div>
-    </div>
-    <footer>
-        <div class="footerLeft">
-            <div class="footerMenu">
-                <h1 class="fMenuTitle">About Us</h1>
-                <ul class="fList">
-                    <li class="fListItem">Company</li>
-                    <li class="fListItem">Contact</li>
-                    <li class="fListItem">Careers</li>
-                    <li class="fListItem">Affiliates</li>
-                    <li class="fListItem">Stores</li>
-                </ul>
-            </div>
-            <div class="footerMenu">
-                <h1 class="fMenuTitle">Useful Links</h1>
-                <ul class="fList">
-                    <li class="fListItem">Support</li>
-                    <li class="fListItem">Refund</li>
-                    <li class="fListItem">FAQ</li>
-                    <li class="fListItem">Feedback</li>
-                    <li class="fListItem">Stories</li>
-                </ul>
-            </div>
-            <div class="footerMenu">
-                <h1 class="fMenuTitle">Products</h1>
-                <ul class="fList">
-                    <li class="fListItem">Air Force</li>
-                    <li class="fListItem">Air Jordan</li>
-                    <li class="fListItem">Blazer</li>
-                    <li class="fListItem">Crater</li>
-                    <li class="fListItem">Hippie</li>
-                </ul>
-            </div>
-        </div>
-        <div class="footerRight">
-            <div class="footerRightMenu">
-                <h1 class="fMenuTitle">Subscribe to our newsletter</h1>
-                <div class="fMail">
-                    <input type="text" placeholder="your@email.com" class="fInput">
-                    <button class="fButton">Join!</button>
+        <section class="mainSection">
+            <main>
+                <div class="content">
+                    <span id="title">ARE YOU WILLING</span>
+                    <span id="subtitle">to get healthy?</span>
+                    <span id="text">Join Iron Fitness and enjoy groundbreaking equipment and monthly workouts. </span>
+                    <div id="startBtn"><button>START NOW</button></div>
+                </div>
+            </main>
+        </section>
+
+        <section id="plansSection">
+            <h1 id="plansTitle">our <span>special plans</span></h1>
+            <div class="plans">
+                <div id="basicPlan">
+                    <h1>BASIC</h1>
+                    <div class="price">
+                        ₹1000
+                    </div>
+                    <span class="perMonthText">per month</span>
+                    <ul> Get access to:
+                        <li><i class="fa-regular fa-check"></i> Weight training room</li>
+                        <li><i class="fa-regular fa-check"></i> Aerobics room</li>
+                    </ul>
+                    <button class="purchasePlan">PURCHASE NOW</button>
+                </div>
+                <div id="standardPlan">
+                    <!-- <div class="popular">POPULAR</div> -->
+                    <h1>STANDARD</h1>
+                    <div class="price">
+                        ₹3000
+                    </div>
+                    <span class="perMonthText">per month</span>
+                    <ul> Get access to:
+                        <li><i class="fa-regular fa-check"></i> Weight training room</li>
+                        <li><i class="fa-regular fa-check"></i> Aerobics room</li>
+                        <li><i class="fa-regular fa-check"></i> Personal Trainer</li>
+                        <li><i class="fa-regular fa-check"></i> Dietician, diet plans and meal guides</li>
+                    </ul>
+                    <button class="purchasePlan">PURCHASE NOW</button>
+                </div>
+                <div id="premiumPlan">
+                    <h1>PREMIUM</h1>
+                    <div class="price">  ₹5000
+                    </div>
+                    <span class="perMonthText">per month</span>
+                    <ul> Get access to:
+                        <li><i class="fa-regular fa-check"></i> Weight training room</li>
+                        <li><i class="fa-regular fa-check"></i> Aerobics room</li>
+                        <li><i class="fa-regular fa-check"></i> Heated swimming pool</li>
+                        <li><i class="fa-regular fa-check"></i> Sauna</li>
+                        <li><i class="fa-regular fa-check"></i> Crossfit area</li>
+                        <li><i class="fa-regular fa-check"></i> Martial arts classes</li>
+                        <li><i class="fa-regular fa-check"></i> Personal trainer</li>
+                        <li><i class="fa-regular fa-check"></i> Dietician, diet plans and meal guides</li>
+                    </ul>
+                    <button class="purchasePlan">PURCHASE NOW</button>
                 </div>
             </div>
-            <div class="footerRightMenu">
-                <h1 class="fMenuTitle">Follow Us</h1>
-                <div class="fIcons">
-                    <img src="./img/facebook.png" alt="" class="fIcon">
-                    <img src="./img/twitter.png" alt="" class="fIcon">
-                    <img src="./img/instagram.png" alt="" class="fIcon">
-                    <img src="./img/whatsapp.png" alt="" class="fIcon">
+        </section>
+
+        <section id="aboutUsSection">
+            <div class="textAndImg">
+                <div class="image"><img src="./images/gym.jpg"></div>
+                <div class="aboutUsText">
+                    <p>
+                        It is a known fact that regular exercise benefits your health, mind, and body. It boosts your energy, increases lean muscle mass, decreases your risk for certain health conditions, and helps you manage your weight. Moreover, it also improves your mood and enables you to live longer. Additionally, it leads to an increase in flexibility and blood flow in your body.
+                    </p>
+                    <p>
+                        Iron fitness is a premium Health and Fitness space in the heart of the
+                        city. We provide our members with the best workouts coupled with personal training to achieve their fitness goals.
+                        Our memberships are designed for those who love to train hard and crave variety in their workouts.
+                    </p>
+                    
                 </div>
             </div>
-            <div class="footerRightMenu">
-                <span class="copyright">@Lama Dev. All rights reserved. 2022.</span>
+        </section>
+
+        <section id="findUsSection">
+            <div class="mapAddress">
+                <div>
+                    <i class="fa-solid fa-location-dot">Location</i>
+                    <p>We are at</p>
+                    <p>Lovely Professional University</p>
+                    
+                </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57828.62837558659!2d75.71851381421669!3d31.236379404524676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5f5e9c489cf3%3A0x4049a5409d53c300!2sLovely%20Professional%20University!5e0!3m2!1sen!2sin!4v1666810542890!5m2!1sen!2sin"  width="450" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                
             </div>
-        </div>
-    </footer>
-    <script src="./app.js"></script>
+        </section>
+
+        <footer id="contact">
+            <div class="contacts">
+                <p>Our social media</p>
+                <div class="imgs">
+                    <img src="./images/facebook1.png" height="35px">
+                    <img src="./images/instagram1.png" height="35px">
+                    <img src="./images/twitter1.png" height="35px">
+                    <img src="./images/whatsapp1.png" height="35px">
+                    <img src="./images/email.png" height="35px">
+                </div>
+            </div>
+            <span><img src="./images/thunderbolt-white.png" height="55px"></span>
+            <div class="newsletter">
+                <p>For any queries</p>
+                <input type="email" placeholder="mail@example.com">
+                <button>Submit</button>
+            </div>
+            
+        </footer>
+    </div>
+    <i class="fa-solid fa-up"></i>
 </body>
 
 </html>
