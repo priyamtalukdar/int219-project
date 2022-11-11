@@ -48,7 +48,17 @@ html {
     font-family: font;
 }
 
+*::-webkit-scrollbar {
+    width: 7px;
+}
 
+*::-webkit-scrollbar-track {
+    background-color: #c9c9c9;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #8b8b8b;
+}
 
 body {
     background-color: #000814;
@@ -83,7 +93,7 @@ header .headerLogo {
 
 header .headerLogo a {
     text-decoration: none;
-    color: #ac1616;
+    color: #d61313;
     display: flex;
 }
 
@@ -104,19 +114,19 @@ header nav {
 header nav a {
     margin: 0px 30px;
     text-decoration: none;
-    color: #ffffff;
+    color: #db1919;
     transition: 0.4s;
     font-size: 1.1em;
 }
 
 header nav a:hover {
-    color: #3c7419;
+    color: #FFD60A;
 }
 
-header .hamburgerMenu {
+header .slideMenu {
     display: none;
     position: absolute;
-    color: #ffffff;
+    color: #8d1010;
     background-color: transparent;
     border: none;
     font-size: 1em;
@@ -149,7 +159,7 @@ header #showMenu {
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    color: #ff0505;
+    color: #dc1d1d;
 }
 
 .mainSection main .content span,
@@ -456,15 +466,15 @@ header #showMenu {
 }
 
 #findUsSection .mapAddress div i {
-    font-size: 1.5em;
+    font-size: 1.7em;
     margin-bottom: 10px;
-    margin-left: 10px;
-    color: #932f11;
+    margin-left: 15px;
+    color: #FFD60A;
 }
 
 #findUsSection .mapAddress div p:first-of-type {
     font-size: 0.7em;
-    margin-bottom: 1px;
+    margin-bottom: 15px;
 }
 
 #findUsSection .mapAddress div p:last-of-type {
@@ -586,8 +596,4 @@ header #showMenu {
         scrollbar-width: thin;
         scrollbar-color: #8b8b8b #c9c9c9;
     }
-}
-.loginbtn
-{
- align-items: center;
 }

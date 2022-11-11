@@ -5,18 +5,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>IRON FITNESS</title>
-    <link href="./style/mediaqueries.css" rel="stylesheet">
+    <title>Adrino Club</title>
     <script src="./script/script.js" defer></script>
     <link href="./style/style.css" rel="stylesheet">
+    <link href="./style/mediaqueries.css" rel="stylesheet">
     <link href="./images/thunderbolt-outline.png" rel="icon">
     <link href="https://site-assets.fontawesome.com/releases/v6.0.0/css/all.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="full-page">
+    
     <div class="container">
-       <!-- logo  -->
+      
         <header>
             <div class="headerLogo">
                 <a href="#">
@@ -28,7 +28,6 @@
             <nav>
                 <a href="login.html" 
                 onclick="document.getElementById('login-form').style.display='block'" style="width:auto;">Login</a>
-                
                 <a href="#plansSection"><span>Plans</span></a>
                 <a href="#aboutUsSection"><span>About us</span></a>
                 <a href="#findUsSection"><span>Find us</span></a>
@@ -36,7 +35,7 @@
               
             </nav>
            
-            <button class="hamburgerMenu"><i class="fa-regular fa-bars"></i></button>
+            <button class="slideMenu"><i class="fa-regular fa-bars"></i></button>
         </header>
    
         <section class="mainSection">
@@ -63,10 +62,10 @@
                         <li><i class="fa-regular fa-check"></i> Weight training room</li>
                         <li><i class="fa-regular fa-check"></i> Aerobics room</li>
                     </ul>
-                    <button class="purchasePlan">PURCHASE NOW</button>
+                    <button class="purchasePlan" onclick="location.href = 'login.html';" id="myButton" class="float-left submit-button" >PURCHASE NOW</button>
                 </div>
                 <div id="standardPlan">
-                    <!-- <div class="popular">POPULAR</div> -->
+                 
                     <h1>STANDARD</h1>
                     <div class="price">
                         ₹3000
@@ -78,7 +77,7 @@
                         <li><i class="fa-regular fa-check"></i> Personal Trainer</li>
                         <li><i class="fa-regular fa-check"></i> Dietician, diet plans and meal guides</li>
                     </ul>
-                    <button class="purchasePlan">PURCHASE NOW</button>
+                    <button class="purchasePlan" onclick="location.href = 'login.html';" id="myButton" class="float-left submit-button" >PURCHASE NOW</button>
                 </div>
                 <div id="premiumPlan">
                     <h1>PREMIUM</h1>
@@ -95,7 +94,7 @@
                         <li><i class="fa-regular fa-check"></i> Personal trainer</li>
                         <li><i class="fa-regular fa-check"></i> Dietician, diet plans and meal guides</li>
                     </ul>
-                    <button class="purchasePlan">PURCHASE NOW</button>
+                    <button class="purchasePlan" onclick="location.href = 'login.html';" id="myButton" class="float-left submit-button" >PURCHASE NOW</button>
                 </div>
             </div>
         </section>

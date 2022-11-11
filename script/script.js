@@ -1,9 +1,8 @@
-let menuBtn = document.querySelector(".hamburgerMenu");
+let menuBtn = document.querySelector(".slideMenu");
 let showMenu = document.querySelector("#showMenu");
 let navBar = document.querySelector("nav");
 let arrowUp = document.querySelector(".fa-up");
 let clicked = false;
-
 
 menuBtn.addEventListener("click", showNavBar);
 document.addEventListener("scroll", scrollPage);
@@ -12,9 +11,9 @@ document.addEventListener("scroll", scrollPage);
 function showNavBar() {
   if (clicked == false) {
     showMenu.style.display = "inline-block";
-    showMenu.style.animation = "show .3s ease 0s 1 normal both";
+    showMenu.style.animation = "show .3s ease 0s 1 normal both ";
     navBar.style.display = "inline-block";
-    navBar.style.animation = "show .3s ease 0s 1 normal both";
+    navBar.style.animation = " show .3s ease 0s 1 normal both";
 
     clicked = true;
   } else if (clicked == true) {
